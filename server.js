@@ -1,5 +1,9 @@
-//IIFE Function (Immediately Invoked Function Expression)
+const notes = require('./notes');
 
-(function(){
-    console.log("Hello Yogesh");
-})()
+var age = notes.age;
+console.log(age);
+
+var result = notes.addNumber(age+1,4);
+console.log(result);
+
+console.log('Server file is available');
