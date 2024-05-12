@@ -1,3 +1,5 @@
+// Interconversion of JSON file
+
 const jsonString = '{"name":"Yogesh", "age":"19", "city":"New Delhi"}';
 const jsonObject = JSON.parse(jsonString);
 console.log(jsonString)
