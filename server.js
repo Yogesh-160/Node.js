@@ -1,9 +1,17 @@
-const notes = require('./notes');
+const express = require('express');
+const app = express();
 
-var age = notes.age;
-console.log(age);
+const PORT = 9000;
 
-var result = notes.addNumber(age+1,4);
-console.log(result);
+app.get('/',(req,res) => {
+    res.send("Hello Home Page");
+})
+app.get('/home',function(req,res){
+    res.send("Welcome to my hotel.... How can I help you?");
+    
+   
+})
 
-console.log('Server file is available');
+app.listen(PORT, ()=>{
+    console.log(`Server is Listening on PORT ${PORT} : http://localhost:${PORT}`)
+});
