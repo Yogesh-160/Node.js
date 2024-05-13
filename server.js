@@ -3,7 +3,7 @@ const app = express();
 const db = require('./db')
 
 const PORT = 9000;
-
+const Person = require('./person')
 
 app.get('/', (req,res) => {
     res.send("Welcome to my Home page")
